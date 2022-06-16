@@ -45,6 +45,7 @@ checkAuth() {
       child: const TodoPage(),
     );
   } else {
+    print('');
     return BlocProvider(
       create: (context) => AuthBloc(),
       child: const AuthScreen(),
